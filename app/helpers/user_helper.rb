@@ -18,6 +18,7 @@ helpers do
        session[:user_id] = user.id
        redirect '/'
      else
+       status 422
        @errors = ["Incorrect Username or Password"]
        erb :'sessions/new'
      end
