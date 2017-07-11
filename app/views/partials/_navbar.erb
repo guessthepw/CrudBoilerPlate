@@ -1,0 +1,14 @@
+<nav>
+  <div>
+    <ul>
+      <% if logged_in? %>
+        <li><a href='/users/<%= @user.id %>'><%= @user.email%></a></li>
+        <li><a href='/logout'>Log Out</a></li>
+      <% else %>
+        <li><a href='/login'>Log In</a></li>
+        <li><a href='/users/new'>Sign Up</a></li>
+      <% end %>
+      <li><a href="/"><span>Home</span></a></li>
+    </ul>
+  </div>
+</nav>
