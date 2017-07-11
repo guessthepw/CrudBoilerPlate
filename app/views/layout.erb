@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!-- Just Incase
+  <link rel="stylesheet" href="/css/application.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script> -->
+  <title>Assesment</title>
+</head>
+<body>
+  <%= erb(:'partials/_navbar') %>
+  <%= yield %>
+  <% if errors? %>
+    <%= erb(:'partials/_errors', layout: false,  locals: {errors: @errors}) %>
+  <% end %>
+</body>
+</html>
