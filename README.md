@@ -1,12 +1,9 @@
 # CrudBoilerPlate
 
-`cd Desktop(or whatever)`
-`git clone https://github.com/AaronStackBarnes/CrudBoilerPlate.git`
-`git co -b (solo branch name)`
-`git remote set-url origin (URL to git repo you want to push to)`
-`bundle`
-
-
+1. `cd Desktop(or whatever)`
+2. `git clone https://github.com/AaronStackBarnes/CrudBoilerPlate.git`
+3. `git co -b (solo branch name)`
+4. `git remote set-url origin (URL to git repo you want to push to)`
 
 #### When Starting With a Blank Skeleton
 
