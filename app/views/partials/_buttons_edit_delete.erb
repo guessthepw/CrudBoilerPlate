@@ -1,15 +1,18 @@
 <div>
   <ul>
     <li >
-      <form action="/<%= type %>/<%= editable.id %>" method="post">
-        <input type="hidden" name="_method" value="delete"/>
-        <input type="submit" value="delete">
-      </form>
+      <%= erb(:'partials/_create', layout: false,  locals: {createable: WHATEVER}) %>
     </li>
     <li >
-      <a href="/<%= type %>/<%= editable.id %>/edit">
-        dummy
-      </a>
+     <%= erb(:'partials/_read', layout: false,  locals: {readable: WHATEVER}) %>
+    </li>
+    <li>
+    </li>
+    <li>
+      <%= erb(:'partials/_update', layout: false,  locals: {updateable: WHATEVER}) %>
+    </li>
+    <li>
+      <%= erb(:'partials/_update', layout: false,  locals: {deleteableable: WHATEVER}) %>
     </li>
   </ul>
 <div>
