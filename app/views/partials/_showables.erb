@@ -1,4 +1,4 @@
 
   <% showables.each do |showable| %>
-    <span><%= erb(:'partials/_voteable', layout: false,  locals: {showable: showable}) %> </span>
+    <span><%= erb(:'partials/_showable', layout: false,  locals: {showable: showable}) %> </span>
   <% end %>
