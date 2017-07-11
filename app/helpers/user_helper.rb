@@ -1,7 +1,7 @@
 helpers do
   def create_user
-    user = User.create(params[:user])
-    if user.valid?
+    user = User.new(params[:user])
+    if user.save
       session[:user_id] = user.id
       redirect '/'
     else
